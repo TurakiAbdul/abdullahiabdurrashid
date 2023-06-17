@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullahi Abdurrashid Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+ </head>
+
+ <body>
+   <header id="navigation" class="navbar-fixed-top navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <!-- /responsive nav button -->
+
+                <!-- logo -->
+                <a class="navbar-nd" href="#body">
+                    <h1 id="logo">
+                        <img src="img/20230528_213407.png" alt="Meedahcosmectics">
+                    </h1>
+                </a>
+                <!-- /logo -->
+            </div>
+
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <ul id="nav" class="nav navbar-nav">
+                    <li class="current"><a href="#body">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#works">Work</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="http://google.com">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- /main nav -->
+
+        </div>
+    </header>
+  
+  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a student of Ahmadu Bello University, Zaria, running a Degree Program in Civil Engineering. I was born in Lere Local Government Area of Kaduna state, Nigeria.</p>
+    
+    <p>I attended a Computer Institute where I obtained a non-Degree Certificate in different programs such as Microsoft Office, Microsoft Excel, PowerPoint, Corel Draw, Graphics Design, Front-end Cartoon Animations & App Development.</p>
+    
+    <p>I am a Graphics Designer and also a Web Developer. I can design attractive and responsive websites for you.</p>
+  </section>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1</li>
+      <li>Project 2</li>
+      <li>Project 3</li>
+    </ul>
+  </section>
+  
+  <section id="blog">
+    <h2>Blog</h2>
+    <article>
+      <h3>Blog Post Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor eleifend sapien, sit amet rhoncus ligula porta vel
+</section>
+  
+  <section id="blog">
+    <h2>Blog</h2>
+    <article>
+      <h3>Blog Post Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor eleifend sapien, sit amet rhoncus ligula porta vel
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Name: Abdullahi Abdurrashid (Turaki)</p>
+    <p>Phone: 08112399680</p>
+    State of Resident: Kaduna State Nationality: Nigeria
+  </section>
+
+<script>
+    // JavaScript code
+    
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Form submission
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      
+      // Get form values
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      
+      // Perform form validation
+      
+      // Perform form submission via AJAX or any other method
+      
+      // Display success message or error message
+    });
+  </script>
+  </body>
+  </html>
